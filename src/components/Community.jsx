@@ -1,17 +1,25 @@
 import React from 'react'
-import { useAuth0 } from '@auth0/auth0-react'
+import { useAuth0, User } from '@auth0/auth0-react'
+
 // components 
-import Header from './Header';
+import CommunityHeader from './CommunityHeader'
 
 function Community() {
 
-    const { logout, user } = useAuth0();
+  const { user } = useAuth0();
+
+
+
 
   return (
     <div>
-        
-        <p>{user.nickname}</p>
-        <button onClick={logout} className='btn btn-outline-info me-2' >Log Out</button>
+      <CommunityHeader />
+
+      <div className="community-body container d-flex justify-content-around">
+
+      
+      </div>
+
     </div>
   )
 }
