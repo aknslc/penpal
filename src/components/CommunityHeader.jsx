@@ -35,7 +35,7 @@ function CommunityHeader() {
                     </div>
                     <div className="avatar">
                         <div className="btn-group">
-                            <img src={user.picture} className="rounded-circle w-50" data-bs-toggle="dropdown" aria-expanded="false" alt={user.name} />
+                            <div className="rounded-circle w-50" data-bs-toggle="dropdown" aria-expanded="false">user</div>
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item">Profile</a></li>
                                 <li><a className="dropdown-item">Settings</a></li>
